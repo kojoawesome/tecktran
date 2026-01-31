@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/teckmiqz/public_html
+    - /bin/bash -c 'npm install' # Install dependencies
+    - /bin/bash -c 'npm run build' # Build the project
+    - /bin/cp -r ./dist/* $DEPLOY_PATH/ # Copy build files to public_html
