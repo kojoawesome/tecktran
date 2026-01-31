@@ -1,58 +1,82 @@
-import { Link } from 'react-router-dom';
-import { Users, PackageCheck, Truck, CheckCircle, ArrowRight } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Users,
+  PackageCheck,
+  Truck,
+  CheckCircle,
+  ArrowRight,
+  Anchor,
+} from "lucide-react";
 
 export function Services() {
   const services = [
     {
       icon: Users,
-      title: 'Human Resource Solutions',
-      slug: 'hr-solutions',
+      title: "Human Resource Solutions",
+      slug: "hr-solutions",
       description:
-        'Build strong, high-performing teams with comprehensive HR services including recruitment, talent management, training, and policy development.',
+        "Build strong, high-performing teams with comprehensive HR services including recruitment, talent management, training, and policy development.",
       benefits: [
-        'Strategic talent acquisition',
-        'Employee performance management',
-        'HR policy development',
-        'Training and development programs',
+        "Strategic talent acquisition",
+        "Employee performance management",
+        "HR policy development",
+        "Training and development programs",
       ],
     },
     {
       icon: PackageCheck,
-      title: 'Payroll Management Services',
-      slug: 'payroll-management',
+      title: "Payroll Management Services",
+      slug: "payroll-management",
       description:
-        'Ensure accurate, timely, and compliant payroll processing with our comprehensive payroll management solutions.',
+        "Ensure accurate, timely, and compliant payroll processing with our comprehensive payroll management solutions.",
       benefits: [
-        'Accurate salary calculation',
-        'Tax and statutory compliance',
-        'Payslip generation',
-        'Benefits administration',
+        "Accurate salary calculation",
+        "Tax and statutory compliance",
+        "Payslip generation",
+        "Benefits administration",
       ],
     },
     {
       icon: Truck,
-      title: 'Logistics & Operational Support',
-      slug: 'logistics-support',
+      title: "Logistics & Operational Support",
+      slug: "logistics-support",
       description:
-        'Optimize your operations with efficient logistics management, supply chain coordination, and operational process improvement.',
+        "Optimize your operations with efficient logistics management, supply chain coordination, and operational process improvement.",
       benefits: [
-        'Supply chain optimization',
-        'Transportation management',
-        'Inventory control',
-        'Process improvement',
+        "Supply chain optimization",
+        "Transportation management",
+        "Inventory control",
+        "Process improvement",
       ],
     },
     {
       icon: CheckCircle,
-      title: 'General Supply Services',
-      slug: 'general-supply',
+      title: "General Supply Services",
+      slug: "general-supply",
       description:
-        'Reliable sourcing and procurement of quality goods and materials, from office supplies to specialized equipment.',
+        "Reliable sourcing and procurement of quality goods and materials, from office supplies to specialized equipment.",
       benefits: [
-        'Quality product sourcing',
-        'Vendor management',
-        'Cost-effective procurement',
-        'Timely delivery',
+        "Quality product sourcing",
+        "Vendor management",
+        "Cost-effective procurement",
+        "Timely delivery",
+      ],
+    },
+    {
+      icon: Anchor, // Using a new icon for the new service
+      title: "Offshore Crew Management",
+      slug: "offshore-crew-management",
+      description:
+        "Reliable, compliant, and efficient offshore workforce coordination—end to end. TeckTran International provides Offshore Crew Management services that help operators and contractors mobilize the right people, on time, fully compliant, and ready for offshore operations.",
+      benefits: [
+        "Crew Planning & Rotation Scheduling",
+        "Recruitment & Crew Pool Management",
+        "Statutory & Regulatory Compliance",
+        "Training, Certification & Medical Tracking",
+        "Payroll & Compensation Administration",
+        "Mobilization & Logistics Coordination",
+        "Employee Relations & Welfare Support",
+        "Reporting & Client Interface",
       ],
     },
   ];
@@ -63,10 +87,13 @@ export function Services() {
       <section className="relative bg-gradient-to-br from-accent/5 to-primary/5 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">
+              Our Services
+            </h1>
             <p className="text-xl text-secondary">
-              Comprehensive business solutions designed to strengthen operations, enhance people
-              management, and drive sustainable growth.
+              Comprehensive business solutions designed to strengthen
+              operations, enhance people management, and drive sustainable
+              growth.
             </p>
           </div>
         </div>
@@ -90,17 +117,27 @@ export function Services() {
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-2xl mb-3 text-foreground">{service.title}</h2>
+                      <h2 className="text-2xl mb-3 text-foreground">
+                        {service.title}
+                      </h2>
                       <p className="text-secondary">{service.description}</p>
                     </div>
                   </div>
 
                   <div className="mb-6">
-                    <h3 className="text-lg mb-3 text-foreground">Key Benefits:</h3>
+                    <h3 className="text-lg mb-3 text-foreground">
+                      Key Benefits:
+                    </h3>
                     <ul className="space-y-2">
                       {service.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-secondary">
-                          <CheckCircle size={20} className="text-accent flex-shrink-0 mt-0.5" />
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-secondary"
+                        >
+                          <CheckCircle
+                            size={20}
+                            className="text-accent flex-shrink-0 mt-0.5"
+                          />
                           <span>{benefit}</span>
                         </li>
                       ))}
@@ -123,7 +160,9 @@ export function Services() {
       {/* CTA Section */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl mb-6 text-foreground">Ready to Get Started?</h2>
+          <h2 className="text-3xl md:text-4xl mb-6 text-foreground">
+            Ready to Get Started?
+          </h2>
           <p className="text-xl text-secondary mb-8">
             Let's discuss how our services can help your business thrive.
           </p>

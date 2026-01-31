@@ -220,7 +220,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg mb-1 text-foreground">Phone</h3>
-                    <p className="text-secondary">+233 24 692 4024</p>
+                    <p className="text-secondary">+233 24 313 7837</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Mon - Fri, 9:00 AM - 5:00 PM WAT
                     </p>

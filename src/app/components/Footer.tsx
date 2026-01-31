@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-const logo = "./src/app/components/ui/logo.svg";
+const logo = "/src/app/components/ui/logo.svg";
 
 export function Footer() {
   return (
@@ -72,7 +72,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={20} className="mt-0.5 flex-shrink-0 text-accent" />
                 <span className="text-primary-foreground/80">
-                  +233 24 692 4024
+                  +233 24 313 7837
                 </span>
               </li>
               <li className="flex items-start gap-3">
