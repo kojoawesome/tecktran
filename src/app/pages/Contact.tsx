@@ -15,7 +15,7 @@ export function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/send-email.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -168,6 +168,7 @@ export function Contact() {
                       Logistics & Operational Support
                     </option>
                     <option value="supply">General Supply Services</option>
+                    <option value="supply">Offshore Crew Management</option>
                     <option value="other">Other/Not Sure</option>
                   </select>
                 </div>

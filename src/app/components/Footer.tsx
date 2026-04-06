@@ -80,7 +80,10 @@ export function Footer() {
                   size={20}
                   className="mt-0.5 flex-shrink-0 text-accent"
                 />
-                <span className="text-primary-foreground/80">Accra, Ghana</span>
+                <span className="text-primary-foreground/80">
+                  Darko Farms Building, 5 Osu Close, Nyaniba Estates Accra,
+                  Ghana.
+                </span>
               </li>
             </ul>
           </div>
