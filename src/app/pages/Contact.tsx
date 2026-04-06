@@ -252,9 +252,12 @@ export function Contact() {
                   <div>
                     <h3 className="text-lg mb-1 text-foreground">Office</h3>
                     <p className="text-secondary">
-                      Accra, Ghana
+                      Darko Farms Building,
                       <br />
-                      (Full address available upon request)
+                      5 Osu Close, Nyaniba Estates
+                      <br />
+                      Accra, Ghana.
+                      <br />
                     </p>
                   </div>
                 </div>
