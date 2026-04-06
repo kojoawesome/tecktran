@@ -11,19 +11,35 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission would be handled here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your inquiry! We will get back to you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      service: "",
-      message: "",
-    });
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Thank you for your inquiry! We will get back to you soon.");
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        alert("Failed to send your message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   const handleChange = (
