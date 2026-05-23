@@ -168,7 +168,8 @@ export function Contact() {
                       Logistics & Operational Support
                     </option>
                     <option value="supply">General Supply Services</option>
-                    <option value="supply">Offshore Crew Management</option>
+                    <option value="offshore-crew">Offshore Crew Management</option>
+                    <option value="immigration">Immigration Support Services</option>
                     <option value="other">Other/Not Sure</option>
                   </select>
                 </div>

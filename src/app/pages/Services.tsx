@@ -6,6 +6,7 @@ import {
   CheckCircle,
   ArrowRight,
   Anchor,
+  Globe,
 } from "lucide-react";
 
 export function Services() {
@@ -63,7 +64,26 @@ export function Services() {
       ],
     },
     {
-      icon: Anchor, // Using a new icon for the new service
+      icon: Globe,
+      title: "Immigration Support Services",
+      slug: "immigration-support",
+      description:
+        "Reliable and end-to-end immigration support solutions for expatriates, multinational companies, offshore contractors, and international workforce operations in Ghana.",
+      benefits: [
+        "Work Permit Processing",
+        "Residence Permit Applications & Renewals",
+        "Visa on Arrival (VOA) Support",
+        "Business & Re-Entry Visa Processing",
+        "Non-Citizen Ghana Card Processing",
+        "Expatriate Quota Support",
+        "Immigration Compliance Advisory",
+        "Airport Meet & Assist / Protocol Services",
+        "Dependent & Family Immigration Support",
+        "Expatriate Mobilization & Relocation Support",
+      ],
+    },
+    {
+      icon: Anchor,
       title: "Offshore Crew Management",
       slug: "offshore-crew-management",
       description:

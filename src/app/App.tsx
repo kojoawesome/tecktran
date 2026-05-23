@@ -10,6 +10,7 @@ import { PayrollManagement } from "./pages/services/PayrollManagement";
 import { LogisticsSupport } from "./pages/services/LogisticsSupport";
 import { GeneralSupply } from "./pages/services/GeneralSupply";
 import OffshoreCrewManagement from "./pages/services/OffshoreCrewManagement";
+import ImmigrationSupport from "./pages/services/ImmigrationSupport";
 
 export default function App() {
   return (
@@ -37,6 +38,10 @@ export default function App() {
             <Route
               path="/services/offshore-crew-management"
               element={<OffshoreCrewManagement />}
+            />
+            <Route
+              path="/services/immigration-support"
+              element={<ImmigrationSupport />}
             />
             <Route path="/contact" element={<Contact />} />
           </Routes>
